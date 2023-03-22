@@ -48,4 +48,9 @@ h2{
 
 .loading{
     width: 360px;
+    height: 460px;
+}
+
+p{
+    text-align: center;
 }
