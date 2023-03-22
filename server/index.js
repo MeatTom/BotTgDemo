@@ -3,6 +3,8 @@ require('dotenv').config();
 const token = process.env.BOT_TOKEN;
 const bot = new TelegramBot(token, { polling: true, interval: 300, onlyFirstMatch: true });
 const webAppUrl ='https://bot-tg-demo.vercel.app';
+const express = require('express');
+const app = express();
 
 const commands = [
     { command: 'start', description: 'Начать работу с ботом' },
@@ -11,6 +13,10 @@ const commands = [
     { command: 'contacts', description: 'Контакты для связи' },
     { command: 'help', description: 'Как пользоваться ботом' },
 ];
+
+app.listen(process.env.PORT, () => {
+    console.log(`Сервер запущен на порте ${process.env.PORT}`);
+});
 
 bot.setMyCommands(commands);
 
