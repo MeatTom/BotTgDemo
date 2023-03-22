@@ -1,0 +1,46 @@
+.product {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--tg-theme-button-color);
+    padding: 15px;
+    width: 100%;
+    color: var(--tg-theme-text-color);
+    background-color: var(--tg-theme-bg-color);
+    margin-bottom: 13px;
+}
+
+.item{
+    cursor: pointer;
+}
+
+img {
+    display: block;
+    max-width: 70%;
+    margin: 20px auto;
+    background: var(--tg-theme-button-color);
+}
+
+.description {
+    font-size: 0.8em;
+    color: var(--tg-theme-hint-color);
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.add_button {
+    width: 100%;
+}
+
+.added_btn{
+    background-color: indianred;
+}
+
+.category{
+    text-align: center;
+    line-height: 30px;
+}
+
+.title{
+    text-align: center;
+    margin-bottom: 10px;
+}
