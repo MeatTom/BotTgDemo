@@ -19,6 +19,7 @@ const ModalProduct = ({ product, onClose, showModal }) => {
         getProductInfo();
     }, [productId]);
 
+
     return (
         <div className={ModalStyle.modal}>
             <div className={ModalStyle.modal_content}>
