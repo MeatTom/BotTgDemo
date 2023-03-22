@@ -2,7 +2,7 @@ const TelegramBot = require('node-telegram-bot-api');
 require('dotenv').config();
 const token = process.env.BOT_TOKEN;
 const bot = new TelegramBot(token, { polling: true, interval: 300, onlyFirstMatch: true });
-const webAppUrl ='https://github.com/MeatTom';
+const webAppUrl ='https://bot-tg-demo.vercel.app';
 
 const commands = [
     { command: 'start', description: 'Начать работу с ботом' },
