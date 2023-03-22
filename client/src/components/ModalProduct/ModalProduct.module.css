@@ -45,3 +45,7 @@ h2{
 .desc{
     margin-left: -10px;
 }
+
+.loading{
+    width: 100%;
+}

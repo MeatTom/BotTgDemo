@@ -36,7 +36,7 @@ const ModalProduct = ({ product, onClose, showModal }) => {
                         </ul>
             </>
             ) : (
-            <p>Loading...</p>
+            <p className={ModalStyle.loading}>Loading...</p>
             )}
             </div>
         </div>
