@@ -7,7 +7,7 @@ const express = require('express');
 const app = express();
 const globalAgent = require('global-agent');
 
-if (!globalAgent.isInitialized()) {
+if (!globalAgent.isRunning) {
     globalAgent.bootstrap();
     globalAgent.isRunning = true;
 } else {
