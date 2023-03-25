@@ -5,6 +5,15 @@ const bot = new TelegramBot(token, { polling: true, interval: 2000, onlyFirstMat
 const webAppUrl ='https://bot-tg-demo.vercel.app';
 const express = require('express');
 const app = express();
+const globalAgent = require('global-agent');
+
+if (!globalAgent.isInitialized()) {
+    globalAgent.bootstrap();
+    globalAgent.isRunning = true;
+} else {
+    console.error('Bot instance already running');
+    process.exit(1)
+}
 
 const commands = [
     { command: 'start', description: 'Начать работу с ботом' },
