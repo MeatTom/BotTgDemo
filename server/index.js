@@ -1,7 +1,7 @@
 const TelegramBot = require('node-telegram-bot-api');
 require('dotenv').config();
 const token = process.env.BOT_TOKEN;
-const bot = new TelegramBot(token, { polling: true, interval: 300, onlyFirstMatch: true });
+const bot = new TelegramBot(token, { polling: true, interval: 2000, onlyFirstMatch: true });
 const webAppUrl ='https://bot-tg-demo.vercel.app';
 const express = require('express');
 const app = express();
